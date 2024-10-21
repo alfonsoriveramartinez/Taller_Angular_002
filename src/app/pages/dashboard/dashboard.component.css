@@ -1,0 +1,49 @@
+
+.container{
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150;
+    
+}
+
+.admin{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    margin: 1rem;
+    background-color: var(--red);
+}
+.vendedor{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    margin: 3rem;
+    background-color: var(--bluedark);
+}
+
+.usuario{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    margin: 3rem;
+    background-color: var(--yellow);
+}
+
+.facturador{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    margin: 3rem;
+    background-color: var(--green);
+}

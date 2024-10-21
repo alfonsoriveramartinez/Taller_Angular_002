@@ -1,0 +1,47 @@
+<!-- trabajar con condicionales, if, else, if else -->
+<!-- trabajar con bucles o condicionales, for, switch  -->
+
+<div class="container">
+    @for (usuario of usuarios; track usuarios.findIndex) {
+        @if (usuario.rol.rol === "Admin") {
+            <div class="admin">
+                <div class="info">
+                    <h3>{{usuario.name}}</h3>
+                    <h3>{{usuario.description}}</h3>
+                </div>
+                <p>Es Administrador</p>
+            </div>
+
+        }@else if(usuario.rol.rol === "cliente") {
+            <app-card
+            [data]="{data:usuario}"
+            />
+            
+        } @else if(usuario.rol.rol === "Usuario") {
+            <div class="usuario">
+                <div class="info">
+                    <h3>{{usuario.name}}</h3>
+                    <h3>{{usuario.description}}</h3>
+                </div>
+                <p>Es Usuario</p>
+            </div>
+        } @else if(usuario.rol.rol === "Facturador") {
+            <div class="facturador">
+                <div class="info">
+                    <h3>{{usuario.name}}</h3>
+                    <h3>{{usuario.description}}</h3>
+                </div>
+                <p>Es Facturador</p>
+            </div>
+        } @else {
+            <div class="vendedor">
+                <div class="info">
+                    <h3>{{usuario.name}}</h3>
+                    <h3>{{usuario.description}}</h3>
+                </div>
+                <p>Es vendedora</p>
+            </div>
+            
+        }
+    }    
+</div>

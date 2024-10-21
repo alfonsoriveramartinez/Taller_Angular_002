@@ -10,17 +10,5 @@ import { HomeComponent } from "./pages/home/home.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-    Contact(){
-      alert('Contacto:1234567890');
-    }
-    Show(){
-      alert('Show: una buena persona y estudiosa :)');
-    }
-    SeeMore(){
-      alert('See More: Main veigar desde la beta');
-    }
-    verInfo(){
-      alert('Ver Info: Main Yasuo desde la beta');
-    }
-
+//lo del Appcomponente"funciones" se mandaron a home.components.ts
 }

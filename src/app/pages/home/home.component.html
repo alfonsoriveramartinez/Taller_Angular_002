@@ -1,14 +1,41 @@
-<div class="card">
-    <div class="cardHeader">
-        <img [src]="image" alt="" class="image">
-    </div>
+<!-- lo de homecomponent se paso a card.component.html -->
+<!-- 
+<div class="mainContainer">
+    <app-card
+    image="/images/EdithPhoto.jpg" 
+    name="Edith Estefania" 
+    description="Estudiante de Lic. En Administracion de empresas" 
+    btnContact="Contact"
+    [clickEvent]="Contact"
+    />
 
-    <div class="cardBody">
-        <h2 class="name">{{name}}</h2>
-        <p class="description">{{description}}</p>
-    </div>
+    <app-card 
+    image="/images/alexaPhoto.jpg" 
+    name="Jennifer Vazquez" 
+    description="Cientifica de datos en playa del carmen" 
+    btnContact="Show"
+    [clickEvent]="Show"
+    />
 
-    <div class="cardFooter">
-        <button class="btnContact" (click)="onClickListener()">{{btnContact}}</button>
-    </div>
+    <app-card 
+    image="/images/alejandroPhoto.jpg" 
+    name="Daniel Esqueda" 
+    description="Repartidor de rappi y juega lol el muy desgraciado" 
+    btnContact="verInfo"
+    [clickEvent]="verInfo"
+    />
+    
+    <app-card 
+    image="/images/DiegoPhoto.jpg" 
+    name="Brayan Bertrand" 
+    description="fotografo, ingeniero industrial y tambien juega lol el muy desgraciado"
+    btnContact="SeeMore"
+    [clickEvent]="SeeMore"
+    />
+
+</div> -->
+<div class="mainContainer">
+    <button class="btnVerInfo" (click)="goToProducts()">
+        ver productos
+    </button>
 </div>

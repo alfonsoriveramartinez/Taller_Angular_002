@@ -1,0 +1,25 @@
+<div class="card">
+    @if (data.data.img) {
+        <div class="cardHeader">
+            <img [src]="data.data.img" alt="" class="image">
+        </div>
+    }
+
+    <div class="cardBody">
+        <h2 class="name">{{data.data.name}}</h2>
+        <input type="text" class="input" (change)="onChange($event)">
+        <p class="description">{{data.data.description}}</p>
+        @if (data.data.precio) {
+            <p class="description">{{data.data.precio}}</p>
+        }
+        
+    </div>
+<!-- 
+    <div class="cardFooter">
+        <button class="btnVerDatos" (click)="onClickListener()">{{clickEvent}} ver</button>
+    </div> -->
+
+    <div class="btnBotonContainer">
+        <button class="btnVerDatos" (click)="onClickListener()">{{clickEvent}} ver Info</button>
+    </div>
+</div>
