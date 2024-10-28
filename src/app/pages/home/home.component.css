@@ -1,4 +1,4 @@
-
+/* 
 .btnVerInfo{
     padding: 5px 10px;
     font-size: 14px;
@@ -10,5 +10,46 @@
     &:active{
         background-color: #fff;
         color: #0D0D0D;
+    }
+} */
+
+.box{
+    background-color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+        
+    }
+
+    input{
+        height: 25px;
+        border: none;
+        font-size: 1.1rem;
+        border-radius: .5rem;
+        background-color: var(--orange);
+        margin: .5rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    label{
+        margin:1.6rem;
+        font-size: 1.2rem;
+    }
+.button{
+    display: flex;
+    justify-content: center;
+}
+    button{
+        font-size: 1.3rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+        background-color: cornflowerblue;
+        
     }
 }

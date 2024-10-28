@@ -1,31 +1,34 @@
-import { Component, Input} from '@angular/core';
+import { Component, NgModule} from '@angular/core';
 import { CardComponent } from "../../components/card/card.component";
+import { FormsModule } from '@angular/forms';
+//import { BrowserModule } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'ui-home',
   standalone: true,
-  imports: [CardComponent],
+  imports: [CardComponent, FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
 // los componentes se llevaron al card.components.ts
 
-  Contact(){
-    alert('Contacto:1234567890');
+email:string='';
+password:string='';
+
+  login(user:string, password:string){
+    //User tipo de usuario y correo
+    // if(user === '1 = 1' || passwd === '1 = 1'){
+    //   return false;
+    // }
+
+
+    //llamar a la API
+   // user = document.getElementById('email');
+    console.log(`User: ${user}, Password: ${password}`);
   }
-  Show(){
-    alert('Show: una buena persona y estudiosa :)');
-  }
-  SeeMore(){
-    alert('See More: Main veigar desde la beta');
-  }
-  verInfo(){
-    alert('Ver Info: Main Yasuo desde la beta');
-  }
-  goToProducts(){
-    window.location.href = '/products'
-  }
+
 }
 
 

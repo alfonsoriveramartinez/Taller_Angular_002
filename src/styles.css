@@ -5,6 +5,7 @@
     --green:#97f294;
     --yellow:#F2D648;
     --red:#F24B48;
+    --white:#FFF;
 }
 
 *{
@@ -21,6 +22,6 @@ body{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: cornflowerblue;
+    background-color: var(--bluedark);
     gap: 20px;
 }

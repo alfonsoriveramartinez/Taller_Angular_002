@@ -35,7 +35,16 @@
 
 </div> -->
 <div class="mainContainer">
-    <button class="btnVerInfo" (click)="goToProducts()">
-        ver productos
-    </button>
+    <div class="box">
+        
+        <h3> Taller de Angular <p>v1</p></h3>
+            <label for="email">E-mail:</label>
+        <input type="email" placeholder="user@mail.com" name="email" id="email" [(ngModel)]="email">
+            <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="password" [(ngModel)]="password">
+        <div class="button">
+            <button (click)="login(email,password)"> Log in </button>    
+        </div>
+        
+    </div>
 </div>

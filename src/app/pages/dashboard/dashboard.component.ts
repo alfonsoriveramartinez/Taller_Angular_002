@@ -51,15 +51,6 @@ export class DashboardComponent {
         rol:"Facturador"
       }
     },
-    {
-      id:6,
-      name:"Daniel Isai",
-      description:"Usuario de la app",
-      rol:{
-        rol:"Usuario"
-      }
-    },
-
   ];
 
   
